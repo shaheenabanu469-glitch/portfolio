@@ -177,23 +177,27 @@
                 themeToggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
             }
         });
-    </script><!-- Butterfly Cursor Trail Script -->
+   <!-- Butterfly Cursor Trail Script -->
     <script>
         document.addEventListener('mousemove', function(e) {
-            // Throttle the creation so it doesn't spawn too many elements at once
-            if (Math.random() > 0.15) return;
+            // Control frequency so it leaves a nice trail
+            if (Math.random() > 0.2) return;
 
             const butterfly = document.createElement('div');
             butterfly.className = 'cursor-butterfly';
-            butterfly.innerHTML = '<i class="fa-solid fa-feather-pointed"></i>'; // Using an elegant feather/butterfly icon symbol
+            butterfly.innerHTML = '🦋';
             
-            // Position at mouse coordinates
+            // Position at exact mouse coordinates
             butterfly.style.left = e.pageX + 'px';
             butterfly.style.top = e.pageY + 'px';
+            
+            // Randomize slight sideways drift
+            const randomX = (Math.random() - 0.5) * 40;
+            butterfly.style.setProperty('--random-x', randomX + 'px');
 
             document.body.appendChild(butterfly);
 
-            // Remove after animation completes
+            // Remove after animation completes (1 second)
             setTimeout(() => {
                 butterfly.remove();
             }, 1000);
