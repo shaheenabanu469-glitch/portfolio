@@ -469,3 +469,36 @@ footer {
         font-size: 2.2rem;
     }
 }
+/* ==========================================
+   9. MODERN VISUAL POLISH & EFFECTS
+   ========================================== */
+
+/* Custom Styled Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
+
+/* Enhanced Glowing Card Hover Effect */
+.skill-card:hover, .project-card:hover, .leadership-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px -10px rgba(99, 102, 241, 0.3);
+    border-color: var(--primary-color);
+}
+
+/* Vibrant Gradient Highlight */
+.hero-content h1 .highlight {
+    background: linear-gradient(135deg, var(--primary-color), #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
