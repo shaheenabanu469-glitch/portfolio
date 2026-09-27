@@ -164,12 +164,13 @@
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         });
-
-        // Dark / Light Mode Toggle
+// Dark / Light Mode Toggle
         const themeToggle = document.getElementById('themeToggle');
         const htmlElement = document.documentElement;
+
         themeToggle.addEventListener('click', () => {
-            if (htmlElement.getAttribute('data-theme') === 'light') {
+            const currentTheme = htmlElement.getAttribute('data-theme');
+            if (currentTheme === 'light') {
                 htmlElement.setAttribute('data-theme', 'dark');
                 themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
             } else {
