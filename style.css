@@ -415,3 +415,24 @@ footer {
     gap: 10px;
     color: var(--primary-hover);
 }
+/* In-Progress Project Styling */
+.project-card.in-progress {
+    border-style: dashed;
+    opacity: 0.9;
+}
+
+.project-status {
+    margin-top: 1.2rem;
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(245, 158, 11, 0.1);
+    color: #d97706;
+    padding: 4px 12px;
+    font-size: 0.75rem;
+    border-radius: 20px;
+    font-weight: 600;
+}
