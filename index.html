@@ -31,7 +31,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero-section">
+    <section id="hero" class="hero-section fade-in-section">
         <div class="hero-content">
             <span class="badge"><i class="fa-solid fa-graduation-cap"></i> CSE Student at PACE</span>
             <h1>Hi, I'm <span class="highlight">Shaheena Banu</span></h1>
@@ -44,7 +44,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section">
+    <section id="about" class="section fade-in-section">
         <h2><i class="fa-solid fa-user-pen"></i> About Me</h2>
         <div class="about-grid">
             <div class="about-text">
@@ -55,7 +55,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section">
+    <section id="skills" class="section fade-in-section">
         <h2><i class="fa-solid fa-code"></i> Technical Arsenal</h2>
         <div class="skills-grid">
             <div class="skill-card">
@@ -77,8 +77,7 @@
     </section>
 
     <!-- Projects Section -->
-   <!-- Projects Section -->
-    <section id="projects" class="section">
+    <section id="projects" class="section fade-in-section">
         <h2><i class="fa-solid fa-laptop-code"></i> Featured Projects</h2>
         <div class="projects-grid">
             
@@ -127,6 +126,7 @@
                     <span class="status-badge"><i class="fa-solid fa-spinner fa-spin"></i> In Progress</span>
                 </div>
             </div>
+
             <!-- Project 4: AI-Powered 90-Day Career Roadmap Generator -->
             <div class="project-card">
                 <div class="project-header">
@@ -143,18 +143,10 @@
             </div>
 
         </div>
-        <!-- Example on your Projects Section -->
-<section id="projects" class="section fade-in-section">
-    <h2><i class="fa-solid fa-laptop-code"></i> Featured Projects</h2>
-    <!-- your project grid -->
-</section>
-
-    <h2><i class="fa-solid fa-award"></i> Leadership & Involvement</h2>
-
     </section>
 
     <!-- Leadership Section -->
-    <section id="leadership" class="section">
+    <section id="leadership" class="section fade-in-section">
         <h2><i class="fa-solid fa-award"></i> Leadership & Involvement</h2>
         <div class="leadership-card">
             <h3>IEEE Vice-Chair</h3>
@@ -164,7 +156,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section contact-section">
+    <section id="contact" class="section contact-section fade-in-section">
         <h2><i class="fa-solid fa-paper-plane"></i> Let's Connect</h2>
         <p>Open for collaborations, technical discussions, and software engineering opportunities.</p>
         <div class="social-links">
@@ -178,6 +170,20 @@
         <p>&copy; 2026 Shaheena Banu. Crafted with code & creativity.</p>
     </footer>
 
+    <!-- Modals -->
+    <div id="roadmapModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('roadmapModal')">&times;</span>
+            <h3><i class="fa-solid fa-route"></i> AI-Powered 90-Day Career Roadmap</h3>
+            <p class="modal-subtitle">Hackathon Prototype & CareerTech Solution</p>
+            <div class="modal-body">
+                <p><strong>Overview:</strong> Developed as a team project at PA College of Engineering to solve student information overload by turning broad advice into actionable, day-by-day learning milestones.</p>
+                <p><strong>The Pipeline:</strong> Features a 3-step student input structure (Resume parsing for current skills, AI reasoning for skill-gap analysis, and personalized task execution).</p>
+                <p><strong>Core Mission:</strong> Shifting the student mindset from <em>"What should I learn?"</em> to <em>"What should I do today?"</em></p>
+            </div>
+        </div>
+    </div>
+
     <!-- Embedded JavaScript for Interactivity -->
     <script>
         // Mobile Menu Toggle
@@ -186,7 +192,8 @@
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         });
-// Dark / Light Mode Toggle
+
+        // Dark / Light Mode Toggle
         const themeToggle = document.getElementById('themeToggle');
         const htmlElement = document.documentElement;
 
@@ -200,8 +207,8 @@
                 themeToggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
             }
         });
-      <!-- Scroll Animation Observer Script -->
-    <script>
+
+        // Scroll Animation Observer Script
         const observerOptions = {
             root: null,
             rootMargin: '0px',
@@ -220,19 +227,5 @@
             observer.observe(section);
         });
     </script>
-<!-- Modal for Career Roadmap -->
-    <div id="roadmapModal" class="modal-overlay">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closeModal('roadmapModal')">&times;</span>
-            <h3><i class="fa-solid fa-route"></i> AI-Powered 90-Day Career Roadmap</h3>
-            <p class="modal-subtitle">Hackathon Prototype & CareerTech Solution</p>
-            <div class="modal-body">
-                <p><strong>Overview:</strong> Developed as a team project at PA College of Engineering to solve student information overload by turning broad advice into actionable, day-by-day learning milestones.</p>
-                <p><strong>The Pipeline:</strong> Features a 3-step student input structure (Resume parsing for current skills, AI reasoning for skill-gap analysis, and personalized task execution).</p>
-                <p><strong>Core Mission:</strong> Shifting the student mindset from <em>"What should I learn?"</em> to <em>"What should I do today?"</em></p>
-            </div>
-        </div>
-    </div>
 </body>
 </html>
-''
