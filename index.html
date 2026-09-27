@@ -177,6 +177,27 @@
                 themeToggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
             }
         });
+    </script><!-- Butterfly Cursor Trail Script -->
+    <script>
+        document.addEventListener('mousemove', function(e) {
+            // Throttle the creation so it doesn't spawn too many elements at once
+            if (Math.random() > 0.15) return;
+
+            const butterfly = document.createElement('div');
+            butterfly.className = 'cursor-butterfly';
+            butterfly.innerHTML = '<i class="fa-solid fa-feather-pointed"></i>'; // Using an elegant feather/butterfly icon symbol
+            
+            // Position at mouse coordinates
+            butterfly.style.left = e.pageX + 'px';
+            butterfly.style.top = e.pageY + 'px';
+
+            document.body.appendChild(butterfly);
+
+            // Remove after animation completes
+            setTimeout(() => {
+                butterfly.remove();
+            }, 1000);
+        });
     </script>
 </body>
 </html>
