@@ -499,3 +499,32 @@ body {
     opacity: 1;
     transform: none;
 }
+/* Default Light Theme Variables */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --card-bg: #f9f9f9;
+    --primary-color: #0066cc;
+    --border-color: #e0e0e0;
+}
+
+/* Dark Theme Variables */
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --card-bg: #1e1e1e;
+    --primary-color: #4da6ff;
+    --border-color: #333333;
+}
+
+/* Apply variables to body and elements */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-card, .skill-card, .leadership-card {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
