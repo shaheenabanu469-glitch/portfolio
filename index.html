@@ -215,7 +215,7 @@
             threshold: 0.15
         };
 
-        const observer = new IntersectionObserver((entries, observer) => {
+       const observer = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('is-visible');
