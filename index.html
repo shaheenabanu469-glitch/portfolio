@@ -77,21 +77,10 @@
     </section>
 
     <!-- Projects Section -->
+   <!-- Projects Section -->
     <section id="projects" class="section">
         <h2><i class="fa-solid fa-laptop-code"></i> Featured Projects</h2>
         <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>Real-Time Bus Tracking App</h3>
-                    <i class="fa-solid fa-bus-simple"></i>
-                </div>
-                <p>An information design and technology project built to provide real-time tracking solutions for local and campus commutes, optimizing transit visibility.</p>
-                <div class="tags">
-                    <span>UI/UX Design</span>
-                    <span>System Architecture</span>
-      
-                 </div>
-            </div> <div class="projects-grid">
             
             <!-- Project 1: IoT Waste Management System -->
             <div class="project-card">
@@ -99,13 +88,13 @@
                     <h3>Smart IoT Waste Management System</h3>
                     <i class="fa-solid fa-trash-can"></i>
                 </div>
-                <p>An intelligent waste monitoring system designed to solve urban sanitation inefficiencies. Utilizes ultrasonic sensors, NodeMCU ESP8266/ESP-12E, and real-time serial tracking to optimize collection routes and trigger automated alerts[span_1](start_span)[span_1](end_span)[span_2](start_span)[span_2](end_span)[span_3](start_span)[span_3](end_span)[span_4](start_span)[span_4](end_span)[span_5](start_span)[span_5](end_span).</p>
+                <p>An intelligent waste monitoring system designed to solve urban sanitation inefficiencies using ultrasonic sensors and NodeMCU.</p>
                 <div class="tags">
                     <span>IoT & Hardware</span>
                     <span>C++ / Arduino</span>
                     <span>ESP8266</span>
-                    <span>Sensors</span>
                 </div>
+                <button class="btn-details" onclick="openModal('iotModal')">Learn More <i class="fa-solid fa-arrow-right"></i></button>
             </div>
 
             <!-- Project 2: Real-Time Bus Tracking App -->
@@ -114,14 +103,15 @@
                     <h3>Real-Time Bus Tracking App</h3>
                     <i class="fa-solid fa-bus-simple"></i>
                 </div>
-                <p>An information design and technology project built to provide real-time tracking solutions for local and campus commutes, optimizing transit visibility.</p>
+                <p>An information design and technology project built to provide real-time tracking solutions for local and campus commutes.</p>
                 <div class="tags">
                     <span>UI/UX Design</span>
                     <span>System Architecture</span>
                 </div>
+                <button class="btn-details" onclick="openModal('busModal')">Learn More <i class="fa-solid fa-arrow-right"></i></button>
             </div>
 
-        </div><!-- Project 3: AI Multilingual Grievance App (In Progress) -->
+            <!-- Project 3: AI Multilingual Grievance App (In Progress) -->
             <div class="project-card in-progress">
                 <div class="project-header">
                     <h3>AI Multilingual Grievance App</h3>
@@ -137,6 +127,8 @@
                     <span class="status-badge"><i class="fa-solid fa-spinner fa-spin"></i> In Progress</span>
                 </div>
             </div>
+
+        </div>
     </section>
 
     <!-- Leadership Section -->
